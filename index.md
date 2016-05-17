@@ -2,10 +2,11 @@
 layout: page
 title: Home
 permalink: /
+published: true
 ---
 
 ## Documentation
 
 A collection of documentation for developers in general, focused on problems that Parks and Wildife faces.
 
-[Architecture and Design Patterns](/architecture)
+[Architecture and Design Patterns](/software-architecture)
