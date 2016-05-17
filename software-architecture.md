@@ -4,10 +4,7 @@ title: Software Architecture and Design Patterns
 permalink: "/software-architecture/"
 published: true
 ---
-
-# Software Architecture
-
-Current software architecture model
+Some tips on software development
 
 ## Relational Data
 
