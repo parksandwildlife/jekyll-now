@@ -1,5 +1,9 @@
 ---
+layout: page
+title: Architecture and Design Patterns
+permalink: /architecture/
 ---
+
 # Software Architecture
 
 Current software architecture model
