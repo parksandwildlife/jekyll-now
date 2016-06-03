@@ -1,7 +1,7 @@
 ---
 layout: page
 title: IT System Development Standards
-permalink: /developmentstandards/
+permalink: /development-standards/
 ---
 
 ## Code Repositories
