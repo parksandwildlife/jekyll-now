@@ -29,15 +29,9 @@ Client interfaces should be built in modern responsive html. The recommended CSS
 
  * [JQuery](https://jquery.com/) for general purpose convenience and ajax requests
  * [localForage](https://github.com/mozilla/localForage) for working with offline storage
- * [Handlebars.js](http://handlebarsjs.com/) for client side template rendering
+ * [Vue.js](https://vuejs.org/) for client side template rendering and data binding
  * [OpenLayers 3](http://openlayers.org/) for web mapping and spatial work
- * [Turf.js](http://turfjs.org/) for client side topological and spatial calculations
- * [DataTables](https://datatables.net/) for grids and table sorting/filtering/editing/pagination
- 
-Note when using something like DataTables make sure to render content with Handlebars.js first hidden, then upgrade to a datatable, then reveal the table. This reduces DOM repaint events significantly for large tables.
 
-For dynamic content, Foundation provides several tools for revealing/hiding divs with CSS only, recommendation to hide a div, update it's content using jquery/handlebars, then reveal it with foundation CSS. This is mainly for UI performance optimisation, and significantly improves mobile and low powered device usability.
- 
 ## Custom mobile forms
 
 Build them with [CyberTracker](http://www.cybertracker.org/) pointing to a PostgreSQL database.
