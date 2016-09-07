@@ -63,6 +63,17 @@ These private repositories must be kept to a minimum, with the intention of
 refactoring/stripping the code in the future to enable publishing of the code
 via a public repository.
 
+### Project dependencies and reproducibility
+
+It is a good practice to always work in an isolated project environment. In the
+case of Python/Django projects, this means making use of tools such as
+[Virtualenv](https://virtualenv.pypa.io/en/stable/) to isolate and contain the
+project environment and libraries from other projects. Always make use of a
+mechanism such as a
+[requirements.txt](https://pip.pypa.io/en/stable/user_guide/#requirements-files)
+file to define project dependencies and library versions, in order that the
+project can be easily reproduced.
+
 ## Environment Controls
 
 ### Development and Test
