@@ -1,5 +1,11 @@
---- layout: page title: Software Architecture and Design Patterns permalink:
-"/software-architecture/" published: true --- Some tips on software development
+---
+layout: page
+title: Software Architecture and Design Patterns
+permalink: /software-architecture/
+published: true
+---
+
+Some tips on software development
 
 ## Relational Data
 
