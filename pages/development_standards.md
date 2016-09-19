@@ -74,6 +74,40 @@ mechanism such as a
 file to define project dependencies and library versions, in order that the
 project can be easily reproduced.
 
+### Testing and continuous integration
+
+The usage of tests to check for correct behaviour, exceptions and regressions is
+generally considered desirable. However, implementing tests requires an
+investment of resources and the scale of testing depends on a project's scope.
+Small proof-of-concept works and projects making heavy usage of agile
+development may not benefit from extensive tests. Larger, mature projects with a
+well-defined specification might be good candidates for test coverage
+(especially where there is an expectation of ongoing updates of functionality).
+
+Project developers will be best placed to make the decision about the type and
+scope of tests that are implemented. The following points should be considered:
+
+* Tests should be limited to code that is owned by the project; don't test the
+behaviour of external libraries and dependecies.
+* Prioritise testing of low-level business rules and custom methods ahead of
+end-user GUI behaviour.
+* Make use of framework testing tools where possible to minimise the effort
+required to generate tests.
+* Use generated test input as well as defined inputs to locate unexpected
+behaviour.
+* Use automated testing tools to run tests and record the results to minimise
+developer effort and to catch regressions earlier.
+
+A practical example of automated testing is the
+[PRS](https://github.com/parksandwildlife/prs) corporate application. This
+project uses test classes defined in the
+[Django](https://docs.djangoproject.com/en/1.10/topics/testing/overview/)
+framework, and a library ([mixer](https://mixer.readthedocs.io/en/latest/)) to
+generate (most) test data. An external service called [Travis
+CI](https://travis-ci.org/) is used to automatically run unit tests for new
+commits and pull requests, and [Coveralls](https://coveralls.io/) is used to
+record the level of code coverage.
+
 ## Environment Controls
 
 ### Development and Test
