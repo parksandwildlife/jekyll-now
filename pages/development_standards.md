@@ -29,7 +29,7 @@ required for anyone (i.e. public users) to download and build the system for own
 use, and therefore must not contain any department-specific details or
 information that may compromise our internal systems.
 
-### Source Control and Development Workflow
+### Source Control
 
 All code repositories should make use of source control software to record
 changes to that repository over time (this is also called version control).
@@ -47,12 +47,37 @@ A useful library of ``.gitignore`` templates is maintained in this repository:
 source control exclusion are also recorded here: [Source Control ignore
 templates](/source-control-ignore/).
 
+### Development Workflow
+
 Software development projects being undertaken by teams greater than one person
 are recommended to adopt a defined standard of development workflow in order to
 use source control effectively across the team. The appropriate workflow is
 context-sensitive to the project and the team. A number of different workflow
-procedure that use Git are compared in this article: [Comparing
-Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/).
+procedures that use Git are compared in this article: [Comparing
+Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/).
+
+A simple multi-developer workflow might be as follows:
+
+1. A developer (Aaron) is tasked to implement some new functionality for a
+   project. He forks the repository on Github, clones it to his development
+   environment and implements the new function.
+2. Once Aaron is satisfied with his work (via suitable testing), he commits it,
+   pushes the commit(s) to his fork, then creates a pull request for the change
+   on Github.
+3. Another developer (Brienna) has permission to merge change requests on the
+   Github project. She reviews the changeset, confirms that there are no merge
+   conflicts, and merges the change request on Github.
+4. A third developer (Chaz) is working on a separate feature. Knowing about the
+   merged change he commits his work as normal, fetches changes from the
+   upstream (original) project, and merges the changes into his own fork of the
+   project. This merged change is now part of his fork of the original project.
+
+As mentioned, the specific workflow used for each project depends on the scale
+of the project, the number of developers and the manner of development (local,
+distributed, agile, waterfall, etc.) A good rule of thumb is that projects being
+worked upon by greater than two developers should implement some sort of
+agreed-upon development change workflow. Good communication is also essential
+for any development project with more than one active participant.
 
 ### Private Repositories
 
