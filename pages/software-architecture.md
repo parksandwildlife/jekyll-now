@@ -61,5 +61,11 @@ though we have had good results from the following:
 
 ## Custom mobile forms
 
-Build them with [CyberTracker](http://www.cybertracker.org/) pointing to a
-PostgreSQL database.
+These are quite difficult due to the locked down nature of mobile development. 
+HTML/JS/CSS is still an ideal delivery platform for mobile applications, but it does reduce discoverability. It may be worth 
+packaging mobile applications that are shortcuts to a URL in a good mobile browser just for discovery in mobile app stores.
+
+ * **Lowest effort:** Make a web application with [Vue.js](https://vuejs.org/) that stores content in local storage 
+ and can use the HTML5 file api to export data as a CSV, that can be emailed or saved on the device.
+ * **Opensource option:** Build a mobile formset with a tool like [CyberTracker](http://www.cybertracker.org/) pointing to a PostgreSQL database.
+ * **Commercial option:** [ArcGIS online](https://www.arcgis.com/home/index.html) integrates with [Esri Collector](http://doc.arcgis.com/en/collector/) and provides similar functionality for simple datasets.
