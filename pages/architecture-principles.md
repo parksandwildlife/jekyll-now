@@ -61,4 +61,7 @@ more cohesively with other agency systems or decommissioned (i.e. single use for
 Proxy config, authentication, access control, logging, monitoring should all be separated from the core system (to maximise reuse of these components across an agencies systems).
 An example architecture is below:
 
-A picture...
+![Separation of Concerns](/images/separation-of-concerns.png "Separation of Concerns")
+
+In the above diagram, most components that can be utilised across several systems have been split into a shared baseline, that newly introduced systems can adopt. The 
+re-usable components should minimise repetition in line with the [DRY principle of software development](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
