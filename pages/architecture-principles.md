@@ -5,7 +5,20 @@ permalink: /architecture-principles/
 published: true
 ---
 
-## Why have Architecture Principles
+## Introduction
+
+An agency develops and procures a multitude of IT systems over time. If not appropriately architected these systems can result in growing costs and risks, as
+system acquisition typically focuses on business needs, tending to neglect long term and non-functional requirements. On the other hand, resorting to enforcing
+a strict set of rules for an agencies IT environment, can result in stagnation and the inability to capitalise on opportunities when they arise. The principles below
+have been written in an educational style, with several examples to demonstrate what real world implementations of them would look like.
+
+## Scope
+
+This document is targeted at any role involved in the design, build or acquisition of IT systems for Parks and Wildlife. It aims to provide a clear understanding and approach
+to selecting technologies and vendors to expand the agencies IT capabilities to meet business needs. Note that the first 3 principles apply to all IT systems, while the remainder
+are more focused on managing the development and deployment processes themselves - and as such may not be relevant to "As A Service" type IT systems.
+
+## Why have IT Architecture Principles
 
 They help address the following issues, which can have significant long term
 benefits to an agencies IT footprint. In addition they enable collaboration between different business groups
@@ -15,7 +28,7 @@ that have similar technical needs, which can greatly improve the efficiency of t
  * Selection of a suite of technologies
    * Ensuring technologies last for the lifetime of a system
    * Minimisation of transition costs when adopting newer technologies
- * Cost of integartion with other systems
+ * Cost of integration with other systems
  * Availability and access to skills and capabilities
    * Minimisation of maintenance and enhancement costs
    * Reduction of change costs
@@ -57,7 +70,7 @@ In some situations (these should be quite rare), existing systems and available 
 problem that the business faces. In these scenarios, renting a commercial product to be used in isolation is preferred, until such a time that it can be integrated
 more cohesively with other agency systems or decommissioned (i.e. single use for a short term project).
 
-## 2. Separation of concerns
+## 2. Confidentiality, Integrity and Availability
 Proxy config, authentication, access control, logging, monitoring should all be separated from the core system (to maximise reuse of these components across an agencies systems).
 An example architecture is below:
 
@@ -65,3 +78,19 @@ An example architecture is below:
 
 In the above diagram, most components that can be utilised across several systems have been split into a shared baseline, that newly introduced systems can adopt. The 
 re-usable components should minimise repetition in line with the [DRY principle of software development](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+
+## 3. Separation of concerns
+
+The design of IT systems and schemas, should attempt to be 'normalised' into standalone components, each which address a reusable function. A great example of this is email - 
+messaging between systems and end users is handled quite well via email for most message volumes, so implementing yet another way to notify a user (other than email) is typically
+avoided. (TODO: complete)
+
+## 4. Revision Control (bespoke systems)
+
+![Codebase](/images/codebase.png "Codebase")
+
+Code and configuration should always be tracked in a version control system (TODO: complete)
+
+## 5. Disposability
+
+Deployments should be scripted, so that servers are disposable (TODO: complete)
