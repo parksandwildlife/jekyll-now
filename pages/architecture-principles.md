@@ -79,7 +79,9 @@ An example architecture is below:
 In the above diagram, most components that can be utilised across several systems have been split into a shared baseline, that newly introduced systems can adopt. The 
 re-usable components should minimise repetition in line with the [DRY principle of software development](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
-## 3. Separation of concerns
+## 3. Shared component architecture
+
+![Shared Component Architecture](/images/Shared Component Architecture.png "Shared Component Architecture")
 
 The design of IT systems and schemas, should attempt to be 'normalised' into standalone components, each which address a reusable function. A great example of this is email - 
 messaging between systems and end users is handled quite well via email for most message volumes, so implementing yet another way to notify a user (other than email) is typically
