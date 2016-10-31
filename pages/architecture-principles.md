@@ -74,6 +74,8 @@ A wiki like MediaWiki or Confluence should be hosted similarly, and provide a ce
 is available whenever needed, and provide a useful starting point for future partners and suppliers. However, a sprawling, unmaintained wiki is often less of a help and more of a hindrance, 
 so users from both parties should be encouraged to keep information up to date, and sensibly structured. 
 
+( Add content on scripting deployments and making sure servers can be rebuilt )
+
 ## 2. Share > re-use > extend > rent or build
 
 ### 2.1 Sharing (co-habitation of data and functions with an existing system)
@@ -122,7 +124,3 @@ re-usable components should minimise repetition in line with the [DRY principle 
 The design of IT systems and schemas, should attempt to be 'normalised' into standalone components, each which address a reusable function. A great example of this is email - 
 messaging between systems and end users is handled quite well via email for most message volumes, so implementing yet another way to notify a user (other than email) is typically
 avoided. (TODO: complete)
-
-## 5. Disposability
-
-Deployments should be scripted, so that servers are disposable (TODO: complete)
