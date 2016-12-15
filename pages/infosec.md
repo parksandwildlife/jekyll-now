@@ -23,11 +23,11 @@ collection of best practices that will help technical specialists implement reli
 
 Confidentiality refers to protecting information from being accessed by unauthorized parties. In other words, only the people who are authorized to do so can gain access to sensitive data.
 
-### Disallow eavesdropping
+### 1. Disallow eavesdropping
 
 Encrypt information in transit and at rest (use SSL/RDP, AWS RDS, Bitlocker)
 
-### Prevent impersonation
+### 2. Prevent impersonation
 
 Centralised identity management (SSO), multifactor for privileged access 
 
@@ -35,11 +35,11 @@ Centralised identity management (SSO), multifactor for privileged access
 
 Integrity refers to ensuring the authenticity of information - that information is not altered or corrupted, and that the source of the information is genuine.
 
-### Take regular backups
+### 1. Take regular backups
 
 Local block device snapshots, remote copies for DR, test
 
-### Tamper protection
+### 2. Tamper protection
 
 Digitally sign important information and archives, use centralised data repositories (e.g. databases, file services)
 
@@ -47,19 +47,19 @@ Digitally sign important information and archives, use centralised data reposito
 
 Availability means that information is accessible by authorized users from wherever they require it.
 
-### Reliability engineering
+### 1. Reliability engineering
 
 Quick restoration procedures from backups
 
-#### Eliminate single points of failure
+### 2. Eliminate single points of failure
 
 Design stateless systems (avoid storing state information on application servers) - best practice separate files and databases from your application code/environment.
 
-#### Monitor and maintain
+### 3. Monitor and maintain
 
 Ensure components of your system are continually monitored, and maintained when e.g. database tables get large or filesystems get full.
 
-### Keep systems updated
+### 4. Keep systems updated
 
 Make sure the hardware and software supporting a system are always up to date and have appropriate support.
 
